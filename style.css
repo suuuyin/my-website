@@ -14,14 +14,13 @@ h1 {
     position: absolute;
     left: 120px;
     top: 0;
-    background-image: url(pictures/susu-removebg-preview.png);
+    background-image: url("images/susu-removebg-preview.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; /* 確保背景圖片適應寬度 */
+    background-size: cover; /* 更新為 cover 確保圖片完整覆蓋 */
     width: 300px;
     height: 120px; /* 設置高度 */
     text-indent: -9999px;
-    /* 可移除 line-height */
 }
 
 header ul{
@@ -34,7 +33,6 @@ header ul{
 header li{
     display: inline;
     margin-right: 7vw;
-    
 }
 header a{
     color: white;
@@ -47,7 +45,7 @@ header a:hover{
     background: rgb(172, 197, 213);
     color: white;
     height: 85vh;
-    background-image: url("pictures/Untitled design (7).png");
+    background-image: url("images/Untitled design (7).png"); /* 更新圖片路徑 */
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -55,7 +53,6 @@ header a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 .new h2{
     font-size:60px;
@@ -93,7 +90,6 @@ header a:hover{
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    
 }
 .shop{
     display: flex;
@@ -108,7 +104,6 @@ header a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 .info h2{
     font-size: 40px;
@@ -118,8 +113,6 @@ header a:hover{
     text-align: center;
     line-height: 2em;
 }
-
-
 .product{
     display: flex;
     background-color: #f2f2f3;
@@ -130,7 +123,6 @@ header a:hover{
 .product div {
     width: 300px;
     text-align: center;
-
 }
 .product img{
     width: 100%;
@@ -144,7 +136,6 @@ header a:hover{
     font-size: 14px;
     line-height: 1.6em;
 }
-
 .newsletter{
     background-color: #aeb0b3;
     color: white;
@@ -153,41 +144,33 @@ header a:hover{
     flex-direction: column;
     align-items: center;
 }
-
 .newsletter p{
-
-
     margin-bottom: 20px;
-
 }
-.newsletter input,.newletter button{
+.newsletter input,.newsletter button{ /* 修正此處的 .newsletter */
     background-color: transparent;
     color: white;
-    border: 1px solid #D2E9FF	;
+    border: 1px solid #D2E9FF;
     padding: 10px;
     border-radius: 5px;
 }
-.newsletter input
-{
+.newsletter input {
     width: 200px;
     margin-right: 15px;
 }
 .newsletter button{
     width: 80px;
     cursor: pointer;
-
 }
-input::placeholder
-{
+input::placeholder {
     color:white;
 }
-input:focus{
-outline: none;
-border-color: rgb(73, 73, 91);
-
+input:focus {
+    outline: none;
+    border-color: rgb(73, 73, 91);
 }
-/* 想硬式語法*/
-@media  screen and (max-width:768px){
+
+@media screen and (max-width:768px){
     header ul {
         display: none;
     }
@@ -195,6 +178,4 @@ border-color: rgb(73, 73, 91);
         left: 50%;
         transform: translateX(-50%);
     }
-
-    
 }
