@@ -1,14 +1,16 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-header{
-    font-size:18px;
+
+header {
+    font-size: 18px;
     background-color: rgb(103, 119, 136);
     height: 125px;
     width: 100%;
     position: relative;
 }
+
 h1 {
     color: white;
     position: absolute;
@@ -17,35 +19,38 @@ h1 {
     background-image: url("images/susu-removebg-preview.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; /* 更新為 cover 確保圖片完整覆蓋 */
+    background-size: cover;
     width: 300px;
-    height: 120px; /* 設置高度 */
+    height: 120px;
     text-indent: -9999px;
 }
 
-header ul{
-    position:absolute;
+header ul {
+    position: absolute;
     right: 5vw;
-    top:0;
+    top: 0;
     line-height: 120px;
 }
 
-header li{
+header li {
     display: inline;
     margin-right: 7vw;
 }
-header a{
+
+header a {
     color: white;
     text-decoration: none;
 }
-header a:hover{
+
+header a:hover {
     text-decoration: underline;
 }
-.new{
+
+.new {
     background: rgb(172, 197, 213);
     color: white;
     height: 85vh;
-    background-image: url("images/Untitled design (7).png"); /* 更新圖片路徑 */
+    background-image: url("images/Untitled design (7).png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -54,24 +59,28 @@ header a:hover{
     align-items: center;
     justify-content: center;
 }
-.new h2{
-    font-size:60px;
+
+.new h2 {
+    font-size: 60px;
     text-align: center;
 }
-.new p{
+
+.new p {
     text-align: center;
     color: rgb(214, 214, 248);
     font-size: 18px;
     margin: 25px 0;
 }
-.new a{
+
+.new a {
     color: white;
     text-decoration: none;
     border: 1px solid #c6d5e3;
     padding: 10px 20px;
     border-radius: 18px;
 }
-.slogan{
+
+.slogan {
     text-align: center;
     background-color: rgba(215, 240, 243, 0.845);
     color: #64a7e5;
@@ -82,7 +91,8 @@ header a:hover{
     font-size: 20px;
     line-height: 1.8em;
 }
-.footer{
+
+.footer {
     background-color: rgba(109, 121, 123, 0.845);
     color: #f2f2f3;
     height: 60px;
@@ -91,13 +101,16 @@ header a:hover{
     align-items: center;
     font-size: 14px;
 }
-.shop{
+
+.shop {
     display: flex;
 }
-.shop img{
+
+.shop img {
     width: 50%;
 }
-.info{
+
+.info {
     width: 50%;
     border-color: white;
     display: flex;
@@ -105,38 +118,46 @@ header a:hover{
     align-items: center;
     justify-content: center;
 }
-.info h2{
+
+.info h2 {
     font-size: 40px;
     margin-bottom: 30px;
 }
-.info p{
+
+.info p {
     text-align: center;
     line-height: 2em;
 }
-.product{
+
+.product {
     display: flex;
     background-color: #f2f2f3;
     justify-content: space-between;
     align-items: center;
     padding: 100px 50px;
 }
+
 .product div {
     width: 300px;
     text-align: center;
 }
-.product img{
+
+.product img {
     width: 100%;
     border-radius: 10px;
 }
-.product h3{
+
+.product h3 {
     font-size: 20px;
     margin: 20px 0;
 }
-.product p{
+
+.product p {
     font-size: 14px;
     line-height: 1.6em;
 }
-.newsletter{
+
+.newsletter {
     background-color: #aeb0b3;
     color: white;
     padding: 60px 0;
@@ -144,37 +165,44 @@ header a:hover{
     flex-direction: column;
     align-items: center;
 }
-.newsletter p{
+
+.newsletter p {
     margin-bottom: 20px;
 }
-.newsletter input,.newsletter button{ /* 修正此處的 .newsletter */
+
+.newsletter input, .newsletter button {
     background-color: transparent;
     color: white;
     border: 1px solid #D2E9FF;
     padding: 10px;
     border-radius: 5px;
 }
+
 .newsletter input {
     width: 200px;
     margin-right: 15px;
 }
-.newsletter button{
+
+.newsletter button {
     width: 80px;
     cursor: pointer;
 }
+
 input::placeholder {
-    color:white;
+    color: white;
 }
+
 input:focus {
     outline: none;
     border-color: rgb(73, 73, 91);
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px) {
     header ul {
         display: none;
     }
-    header h1{
+
+    header h1 {
         left: 50%;
         transform: translateX(-50%);
     }
